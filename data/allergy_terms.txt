@@ -1,0 +1,10 @@
+penicillin
+amoxicillin
+sulfa
+ibuprofen
+codeine
+aspirin
+ace inhibitors
+lisinopril
+enalapril
+

@@ -1,0 +1,12 @@
+generic,brand,class,interactions,max_daily_dose_mg,renal_adjust,dose_units,allergy_family
+Atorvastatin,Lipitor,statin,"",80,No,mg,
+Lisinopril,Prinivil,ACE inhibitor,"Enalapril:Duplicate class",40,Yes,mg,"ACE Inhibitors"
+Amoxicillin,Amoxil,antibiotic,"Aspirin:Decreased efficacy",3000,No,mg,"Penicillins"
+Warfarin,Coumadin,anticoagulant,"Ciprofloxacin:Increased INR;Metoprolol:Potentiation",10,No,mg,
+Ciprofloxacin,Cipro,antibiotic,"Warfarin:Increased INR",1500,Yes,mg,"Quinolones"
+Trimethoprim-Sulfamethoxazole,Bactrim,antibiotic,"Warfarin:Increased bleeding",3200,Yes,mg,"Sulfa"
+Metoprolol,Lopressor,beta-blocker,"Warfarin:Potentiation",400,No,mg,
+Enalapril,Vasotec,ACE inhibitor,"Lisinopril:Duplicate class",40,Yes,mg,"ACE Inhibitors"
+Tramadol,Ultram,opioid,"",400,Yes,mg,
+Acetaminophen,Tylenol,analgesic,"",4000,No,mg,
+

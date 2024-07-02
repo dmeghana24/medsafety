@@ -1,0 +1,7 @@
+patient_id,age,weight_kg,sex,creatinine_mg_dl,allergies,med_list,note,visit_date
+1001,70,80,M,1.2,Penicillin;Aspirin,"Atorvastatin 40mg QD; Lisinopril 10mg QD; Amoxicillin 500mg TID","Started amoxicillin for sinus infection. No prior adverse reactions. Continue statin.",2025-01-04
+1002,45,65,F,0.9,None,"Warfarin 5mg QD; Ciprofloxacin 250mg BID","Ciprofloxacin for UTI; monitor INR as warfarin continued. Advised to avoid NSAIDs.",2025-01-06
+1003,28,74,F,0.7,Sulfa,"Trimethoprim-Sulfamethoxazole 800/160mg BID","Prescribed Bactrim for possible UTI. No allergies noted in record.",2025-01-12
+1004,88,54,M,2.1,Codeine,"Metoprolol 25mg BID; Tramadol 50mg PRN","Tramadol started for hip pain. Discussed constipation risk. Renal function low.",2025-01-17
+1005,67,83,F,1.5,"ACE Inhibitors;Ibuprofen","Enalapril 5mg QD; Acetaminophen 500mg PRN","Patient with chronic cough, advised to avoid ibuprofen due to renal history. Continue enalapril.",2025-01-19
+
