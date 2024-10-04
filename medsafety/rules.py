@@ -1,16 +1,19 @@
 import numpy as np
 
-def check_allergy_conflict(patient_allergies, med_list, drug_lexicon):
     """Check if prescribed meds conflict with allergy list."""
+def check_allergy_conflict(patient_allergies, med_list, drug_lexicon):
     flags = []
-    allergy_set = set([a.strip().lower() for a in str(patient_allergies).split(';') if a.strip()])
+    # Lowercase, strip whitespace and plural "s"
+    allergy_set = set([a.strip().lower().rstrip('s') for a in str(patient_allergies).split(';') if a.strip()])
     for med, _ in med_list:
         med_row = drug_lexicon[drug_lexicon['generic'].str.lower() == med.lower()]
         if not med_row.empty:
             allergy_family = med_row['allergy_family'].values[0]
-            # direct or family match
-            if med.lower() in allergy_set or (isinstance(allergy_family, str) and allergy_family.lower() in allergy_set):
+            # direct or family match, case- and plural-insensitive
+            if med.lower().rstrip('s') in allergy_set:
                 flags.append((med, "allergy_conflict"))
+            elif isinstance(allergy_family, str) and allergy_family.strip().lower().rstrip('s') in allergy_set:
+                flags.append((med, "allergy_family_conflict"))
     return flags
 
 def check_interactions(med_list, drug_lexicon):
