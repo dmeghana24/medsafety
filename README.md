@@ -169,7 +169,7 @@ Patient prescribed amoxicillin 500mg BID. History of penicillin allergy.
 
 ## References
 
-For references see the references directory.
+For references see the `references/` directory.
 
 
 
